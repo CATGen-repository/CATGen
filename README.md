@@ -20,6 +20,13 @@ These experience-driven insights shaped CATGen's multi-stage design, which combi
 
 The repository also includes a temperature-sensitivity experiment figure for comparing generation behavior under different decoding temperatures.
 
+
+Similar to prior work、, different LLM temperature settings may affect generation results. We systematically evaluated temperatures ranging from 0.0 to 1.0 (with increments of 0.2) on unit test generation performance, measuring CovL, CovB, CSR, and PR. For TMC, the variation across temperatures is minimal and therefore it is not included as a core metric in the radar chart.
+
+Each configuration was executed five times, and results were averaged to reduce variance. As shown in the figure below, part (a) presents the original metrics, while part (b) shows the corresponding Max–Min normalized results. The analysis indicates that temperature 0.0 consistently achieves the best performance across all metrics. Performance gradually decreases as temperature increases, although the overall decline remains moderate even at temperature 1.0, suggesting that temperature has a measurable but limited impact on generation quality.
+
+Importantly, the use of rule-based test skeletons before generation constrains the LLM’s output space, which improves stability and effectiveness at lower temperatures. This observation aligns with our hypothesis regarding constrained generation environments.
+
 ![temperature study](pictures/temperature_radar.png)
 
 ## Dependency Distribution
