@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.sqlite3
+*.db
+*.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+.settings/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+
+
+# Others
+*.bak
+*.swp
+*.tmp
+*.orig
+
+# Ignore test outputs
+*.coverage
+htmlcov/
+
+# Ignore personal folders
+.idea/
+
+# Ignore backup files
+*~
+.vscode
